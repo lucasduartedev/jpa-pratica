@@ -16,6 +16,18 @@
   - Hibernate Core: para utilização do JPA;
   - MySQL Connector Java: para e efetuar as transações com o banco de dados;
 
+## O Projeto
+- Simula um sistema de banco contendo informações de básicas de contas, clientes, enderecos. O sistema é simples pois serve apenas para colocar em prática o uso do JPA em projetos Java.
+
+### Relacionamento **@OneToOne** entre Clientes e Contas
+* Cada cliente pode ser dono de apenas uma conta e vice-versa.
+* Analisando as tabelas geradas no banco de dados a tabela _contas_ é uma entidade forte, já que a tabela _clientes_ fica responsável por conter a _chave primária_ da tabela conta.
+  - As regras de negócio vai da empresa responsável pelo sistema defini-las;
+
+<!--
+### Teste com JUnit
+-->
+
 ## Fontes
   - Livro: JPA Eficaz - As melhores práticas de persistência de dados em Java;
   - [x] [Link do livro](https://www.casadocodigo.com.br/products/livro-jpa-eficaz)
